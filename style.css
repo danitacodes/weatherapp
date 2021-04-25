@@ -47,6 +47,15 @@ body {
     z-index: 0;
 }
 
+.container-info{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
 .top {
     text-align: center;
     z-index: 999;
@@ -89,8 +98,9 @@ body {
 }
 
 .top .error {
-    color: white;
-    font-size: 14px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .icon {
@@ -101,11 +111,45 @@ body {
 .location {
     padding-bottom: 5px;
     text-align: center;
-    color: #fff;
+    color: #ff477e;
     line-height: 1.6;
+    font-weight: bold;
+}
+
+.location .time {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .location .city {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+}
+
+.location .date {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.current {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    color: white;
+}
+
+.current::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.current > * {
+    padding-bottom: 10px;
 }
