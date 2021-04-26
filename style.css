@@ -22,7 +22,7 @@ body {
     width: 100%;
 }
 
-.main-container {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ body {
     position: relative;
 }
 
-.main-container::before {
+.main::before {
     content: '';
     position: absolute;
     left: 0;
@@ -45,6 +45,16 @@ body {
     width: 100%;
     height: 100%;
     z-index: 0;
+}
+
+.info{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 10px;
 }
 
 .top {
@@ -80,7 +90,7 @@ body {
     background-color: #fd3e81;
     border-radius: 10px;
     font-size: 15px;
-    cursor: pointer;
+    cursor:pointer;
     transition: all .3s;
 }
 
@@ -89,8 +99,9 @@ body {
 }
 
 .top .error {
-    color: white;
-    font-size: 14px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .icon {
@@ -101,11 +112,45 @@ body {
 .location {
     padding-bottom: 5px;
     text-align: center;
-    color: #fff;
+    color: #ff477e;
     line-height: 1.6;
+    font-weight: bold;
+}
+
+.location .time{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .location .city {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+}
+
+.location .date {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.current {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    color: white;
+}
+
+.current::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.current > * {
+    padding-bottom: 10px;
 }

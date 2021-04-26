@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-container">
+    <div class="main">
         <div class="container top">
         <form action="" onsubmit="return false">
             <input type="text" class="search" placeholder="Search by location">
@@ -18,17 +19,20 @@
 
         <section>
             <div class="container">
+                <div class="info">
                 <div class="icon">
                     <img src="" alt="" class="weather-icon">
                 </div>
                 <div class="location">
-                    <div class="time">12:30pm</div>
+                    <div class="time">12:30</div>
                     <div class="city">Los Angeles, CA</div>
                     <div class="date">May 4</div>
                 </div>
                 <div class="current">
-                    <div class="temp">Temp: 25<span>&deg Celcius</span></div>
-                    <div class="weather-description">Sunny</div>
+                    <div class="temp">Temp: 25<span>°F</span></div>
+                    <div class="weather"> Weather: Sunny</div>
+                    <div class="temp-range"> Temp Range: 10°F / 15°F </div>
+                </div>
                 </div>
             </div>
         </section>
